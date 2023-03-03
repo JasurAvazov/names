@@ -242,6 +242,6 @@ body main {
 
 @media (max-width: 992px) {
   body {
-    background: #222222;
+    background: rgb(34, 34, 34);
   }
 }
