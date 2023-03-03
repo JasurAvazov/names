@@ -150,6 +150,37 @@
   padding-left: 15px;
 }
 
+.header {
+  width: 100%;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 15px;
+}
+
+.header__ad {
+  height: 180px;
+  width: 100%;
+  background-color: gray;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -201,7 +232,7 @@ ul {
 }
 
 body {
-  background: #000;
+  background: fff;
   color: #fff;
 }
 

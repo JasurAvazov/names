@@ -1,1 +1,17 @@
-// Шапка
+.header{
+    width: 100%;
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 15px;
+    }
+    &__ad{
+        height: 180px;
+        width: 100%;
+        background-color: gray;
+        border-radius: 20px;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+}
