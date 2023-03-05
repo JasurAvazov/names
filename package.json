@@ -1,7 +1,6 @@
 {
   "name": "gulp-2022",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
@@ -42,5 +41,14 @@
     "webp-converter": "2.2.3",
     "webpack": "^5.67.0",
     "webpack-stream": "^7.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasurAvazov/names.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JasurAvazov/names/issues"
+  },
+  "homepage": "https://github.com/JasurAvazov/names#readme",
+  "description": ""
 }
