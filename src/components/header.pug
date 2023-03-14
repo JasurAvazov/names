@@ -2,7 +2,37 @@ mixin header()
     header.header 
         .container 
             .header__ad
-                a(href="#")
-                    img(src="@img/ad.jpeg", alt="ad" draggable="false")
+                h1 add 
             .header__nav
-                
+                .header__home 
+                    a(href="index.html") 
+                        img(src="./img/house.svg" alt="home")
+                .header__search 
+                    input(type="text" name="search" placeholder="Исмингизни маносини кидиринг")
+                    button(type="submit") 
+                        img(src="./img/search.svg" alt="search")    
+                .header__share 
+                    button 
+                        img(src="./img/share.svg" alt="send")
+            .header__menu 
+                ul 
+                    li 
+                        a(href="#").header__menu-item 
+                            img(src="./img/star.svg" alt="top")
+                            span Топ 100
+                    li 
+                        a(href="#").header__menu-item 
+                            img(src="./img/search.svg" alt="search")
+                            span Кидириш
+                    li 
+                        a(href="#").header__menu-item 
+                            img(src="./img/like.svg" alt="like")
+                            span Бу кизик
+                    li 
+                        a(href="#").header__menu-item 
+                            img(src="./img/heart.svg" alt="like")
+                            span Севимлилар
+                    li 
+                        .header__menu-item 
+                            img(src="./img/more.svg" alt="like")
+                            span Яна

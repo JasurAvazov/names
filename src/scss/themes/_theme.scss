@@ -1,47 +1,54 @@
 // Тема по умолчанию
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    font-family: 'Montserrat', sans-serif;
+    font-family: sans-serif;
     &:focus,
-    &:active{
+    &:active {
         outline: none;
     }
 }
 html,
-body{
+body {
     height: 100%;
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #7d7d7d;
+    }
 }
-.wrapper{
+.wrapper {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    .main{
+    .main {
         flex: 1 1 auto;
     }
 }
-button{
+button {
     background: none;
     border: none;
     cursor: pointer;
 }
-a{
+a {
     color: inherit;
+    text-decoration: none;
 }
-ul{
+ul {
     list-style-type: none;
-}
-// delete this code
-body{
-    background: fff;
-    color: #fff;
-    @include media(992){
-        background: rgb(34, 34, 34);
-    }
-    main{
-        padding: 20px 0;
-        z-index: z(header);
-    }
 }
