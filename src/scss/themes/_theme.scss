@@ -10,6 +10,12 @@
         outline: none;
     }
 }
+
+body{
+    min-width: 380px;
+}
+
+
 html,
 body {
     height: 100%;
@@ -32,13 +38,13 @@ body {
         background: #7d7d7d;
     }
 }
+
+
 .wrapper {
     min-height: 100%;
+    padding-top: 15px;
     display: flex;
     flex-direction: column;
-    .main {
-        flex: 1 1 auto;
-    }
 }
 button {
     background: none;

@@ -12,27 +12,63 @@ mixin header()
                     button(type="submit") 
                         img(src="./img/search.svg" alt="search")    
                 .header__share 
-                    button 
+                    button.header__share-btn 
                         img(src="./img/share.svg" alt="send")
+                    ul.header__share-list 
+                        li 
+                            a(href="#10") 
+                                img(src="./img/telegram.svg" alt="telegram")
+                                p Telegram 
+                        li 
+                            a(href="#10")
+                                img(src="./img/facebook.svg" alt="facebook")
+                                p Facebook 
+                        li 
+                            a(href="#10")
+                                img(src="./img/share.svg" alt="share")
+                                p Ulashing
             .header__menu 
                 ul 
-                    li 
-                        a(href="#").header__menu-item 
+                    li.header__menu-item  
+                        a(href="#").header__menu-link
                             img(src="./img/star.svg" alt="top")
                             span Топ 100
-                    li 
-                        a(href="#").header__menu-item 
+                    li.header__menu-item 
+                        a(href="#").header__menu-link
                             img(src="./img/search.svg" alt="search")
                             span Кидириш
-                    li 
-                        a(href="#").header__menu-item 
+                    li.header__menu-item 
+                        a(href="#").header__menu-link
                             img(src="./img/like.svg" alt="like")
                             span Бу кизик
-                    li 
-                        a(href="#").header__menu-item 
-                            img(src="./img/heart.svg" alt="like")
+                    li.header__menu-item 
+                        a(href="#").header__menu-link 
+                            img(src="./img/heart.svg" alt="heart")
                             span Севимлилар
-                    li 
-                        .header__menu-item 
-                            img(src="./img/more.svg" alt="like")
+                    li.header__menu-item 
+                        .header__menu-link.header__menu-btn
+                            img(src="./img/more.svg" alt="more")
                             span Яна
+                        ul.header__menu-more 
+                            li 
+                                a(href="#") 
+                                    img(src="./img/note.svg" alt="note")
+                                    | Рукнлар
+                            li 
+                                a(href="#") 
+                                    img(src="./img/camera.svg" alt="camera")
+                                    | Маколлар
+                            li 
+                                a(href="#") 
+                                    img(src="./img/plus.svg" alt="plus")
+                                    | Янги исм кошиш
+                            li 
+                                a(href="#") 
+                                    img(src="./img/mail.svg" alt="mail")
+                                    | Сайт бойича фикрингиз
+                            li 
+                                a(href="#") 
+                                    img(src="./img/net.svg" alt="net")
+                                    | Лотинча
+
+        .filter
