@@ -1,0 +1,104 @@
+mixin category()
+    section.category
+        .container 
+            h1.category__title Форс-тожикча
+            h2.category__subtitle Ушбу саҳифада 
+                span 2009 
+                | та 
+                span форс-тожикча 
+                | исмлар рўйхати берилган.
+            .category__letter 
+                ul.category__list 
+                    li.category__list-item A
+                    li.category__list-item Б
+                    li.category__list-item В
+                    li.category__list-item Г
+                    li.category__list-item Д
+                    li.category__list-item Е
+                    li.category__list-item Ё
+                    li.category__list-item Ж
+                    li.category__list-item З
+                    li.category__list-item И
+                    li.category__list-item Й
+                    li.category__list-item К
+                    li.category__list-item Л
+                    li.category__list-item М
+                    li.category__list-item Н
+                    li.category__list-item О
+                    li.category__list-item П
+                    li.category__list-item Р
+                    li.category__list-item С
+                    li.category__list-item Т
+                    li.category__list-item У
+                    li.category__list-item Ф
+                    li.category__list-item Х
+                    li.category__list-item Ц
+                    li.category__list-item Ч
+                    li.category__list-item Щ
+                    li.category__list-item Э
+                    li.category__list-item Ю
+                    li.category__list-item Я
+                    li.category__list-item Ў
+                    li.category__list-item Қ
+                    li.category__list-item Ғ
+                    li.category__list-item Ҳ
+
+            .category__box 
+                .category__filter 
+                    ul.filter__list  
+                        li.filter__list-item 
+                            img(src="./img/alphabet.svg" alt="abc")
+                            p Алифбо бойича
+                        li.filter__list-item 
+                            img(src="./img/eyeblack.svg" alt="eye")
+                            p Куришлар сони бойича
+                        li.filter__list-item 
+                            p Болалар исми
+                        li.filter__list-item 
+                            p Кизлар исми
+
+                ul.box__list 
+                    li.box__list-item.boy 
+                        a(href="./detail.html").box__list-title Азимшох
+                        p.box__list-text Буюк, етук маъносини англатади. Шохлардек буюк, виқорли, матонатли инсон бўлсин.
+                        .box__list-box 
+                            .item.like 
+                                .like__img.noliked.active
+                                    img(src="./img/noliked.svg" alt="noliked")
+                                .like__img.liked 
+                                    img(src="./img/liked.svg" alt="liked")
+                                .like__count 2553
+                            .item.right                             
+                                .right__item 
+                                    img(src="./img/eye.svg" alt="category")
+                                    p.right__item-text 9999
+                                .right__item 
+                                    a(href="./detail.html").btn Батафсил
+                    li.box__list-item.girl 
+                        a(href="./detail.html").box__list-title Мадина
+                        p.box__list-text Буюк, етук маъносини англатади. Шохлардек буюк, виқорли, матонатли инсон бўлсин.
+                        .box__list-box 
+                            .item.like 
+                                .like__img.noliked.active
+                                    img(src="./img/nolikedgirl.svg" alt="noliked")
+                                .like__img.liked 
+                                    img(src="./img/likedgirl.svg" alt="liked")
+                                .like__count 2553
+                            .item.right                             
+                                .right__item 
+                                    img(src="./img/eye.svg" alt="category")
+                                    p.right__item-text 9999
+                                .right__item 
+                                    a(href="./detail.html").btn Батафсил
+
+                .pagination 
+                    button.pagination__btn 
+                        img(src="./img/left-btn.svg" alt="left")
+                    .pagination__box 
+                        .pagination__box-item.active 1
+                        .pagination__box-item 2
+                        .pagination__box-item 3
+                        .pagination__box-item 4
+                    button.pagination__btn 
+                        img(src="./img/right-btn.svg" alt="left")
+

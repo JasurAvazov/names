@@ -1,26 +1,24 @@
-.main {
+.names {
     &__gender {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 8px;
         &-type {
-            width: calc(50% - 4px);
-            min-height: 140px;
+            width: 100%;
+            min-height: 150px;
             border-radius: 16px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 6px;
             padding: 16px;
             text-decoration: none;
             @media (max-width: 992px) {
                 min-height: auto;
             }
+            color: white;
             .emoji {
-                width: 40px;
-                height: 40px;
+                font-size: 26px;
+                width: 56px;
+                height: 56px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -28,20 +26,19 @@
                 border-radius: 50%;
             }
             h1 {
-                font-weight: 400;
                 line-height: 1.5;
-                font-size: 16px;
+                font-weight: 700;
+                font-size: 24px;
             }
         }
         .boy {
-            background: #cffafe;
-            color: #0e7490;
+            background: rgb(6, 182, 212);
         }
         .girl {
             background: #fce7f3;
-            color: #be185d;
         }
     }
+
     &__type {
         margin: 24px 0px;
         // header
@@ -68,7 +65,7 @@
                 content: "";
                 position: absolute;
                 z-index: 1;
-                right: -33px;
+                right: -30px;
                 top: 0;
                 width: 30px;
                 height: 100%;
@@ -106,11 +103,11 @@
                     }
                 }
                 li {
+                    padding: 8px 16px;
                     border-radius: 16px;
                     background: #f3f4f6;
                     a {
                         display: block;
-                        padding: 8px 16px;
                         width: max-content;
                         height: inherit;
                         font-size: 16px;
@@ -120,58 +117,7 @@
             }
         }
     }
-    &__abc {
-        margin: 24px 0px;
-        &-title {
-            font-size: 24px;
-            line-height: 32px;
-            font-weight: 700;
-            margin-bottom: 16px;
-        }
-        &-block {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            .box {
-                width: calc(50% - 4px);
-                border-radius: 16px;
-                padding: 16px;
-                h3 {
-                    text-align: center;
-                    color: white;
-                    font-size: 20px;
-                    font-weight: 400;
-                    margin-bottom: 12px;
-                }
-                .alphabet {
-                    width: 100%;
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    .item {
-                        padding: 8px;
-                        line-height: 24px;
-                        font-size: 16px;
-                        width: calc(100% / 6);
-                        text-align: center;
-                        color: white;
-                        font-weight: 700;
-                        a {
-                            display: block;
-                            width: 100%;
-                            height: 100%;
-                        }
-                    }
-                }
-            }
-            .boy {
-                background: #06b6d4;
-            }
-            .girl {
-                background: #ec4899;
-            }
-        }
-    }
+
     &__top {
         margin: 24px 0px;
         &-title {
@@ -225,43 +171,4 @@
             margin-top: 16px;
         }
     }
-
-    &__interesting {
-        margin: 24px 0px;
-        &-title {
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 32px;
-            margin-bottom: 16px;
-        }
-        &-box {
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                gap: 16px;
-                li {
-                    background: #f3f4f6;
-                    border-radius: 16px;
-                    width: calc(100% / 4 - 16px);
-                    a {
-                        display: block;
-                        width: 100%;
-                        padding: 16px;
-                        line-height: 24px;
-                        min-height: 80px;
-                        img {
-                            vertical-align: middle;
-                            height: 18px;
-                            margin-left: 4px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.hello {
-    height: 200px;
 }

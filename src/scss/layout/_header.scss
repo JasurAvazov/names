@@ -145,7 +145,6 @@
         left: 0;
         right: 0;
         width: 100%;
-        max-width: 1400px;
         z-index: 3;
         margin: auto;
         background: white;
@@ -179,44 +178,6 @@
                 color: #6b7280;
                 font-size: 12px;
                 margin-top: 4px;
-            }
-        }
-
-        &-more {
-            right: 15px;
-            bottom: 110%;
-            overflow: hidden;
-            width: 250px;
-            background: white;
-            position: absolute;
-            display: flex;
-            visibility: hidden;
-            opacity: 0;
-            z-index: 4;
-            flex-direction: column;
-            border-radius: 16px;
-            transition: opacity 0.4s ease-in-out;
-            box-shadow: 0px -1px 5px 1px rgb(215, 215, 215);
-            &.active {
-                opacity: 1;
-                visibility: visible;
-            }
-            li {
-                width: 100%;
-                border-bottom: 1px solid #e5e7eb;
-
-                a {
-                    display: flex;
-                    padding: 18px 16px;
-                    align-items: center;
-                    gap: 8px;
-                    font-size: 16px;
-                    color: #6b7280;
-                    img {
-                        width: 16px;
-                        height: 16px;
-                    }
-                }
             }
         }
     }

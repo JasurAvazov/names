@@ -2,7 +2,8 @@ mixin header()
     header.header 
         .container 
             .header__ad
-                h1 add 
+                h1 ad
+
             .header__nav
                 .header__home 
                     a(href="index.html") 
@@ -27,6 +28,7 @@ mixin header()
                             a(href="#10")
                                 img(src="./img/share.svg" alt="share")
                                 p Ulashing
+
             .header__menu 
                 ul 
                     li.header__menu-item  
@@ -46,29 +48,8 @@ mixin header()
                             img(src="./img/heart.svg" alt="heart")
                             span Севимлилар
                     li.header__menu-item 
-                        .header__menu-link.header__menu-btn
-                            img(src="./img/more.svg" alt="more")
-                            span Яна
-                        ul.header__menu-more 
-                            li 
-                                a(href="#") 
-                                    img(src="./img/note.svg" alt="note")
-                                    | Рукнлар
-                            li 
-                                a(href="#") 
-                                    img(src="./img/camera.svg" alt="camera")
-                                    | Маколлар
-                            li 
-                                a(href="#") 
-                                    img(src="./img/plus.svg" alt="plus")
-                                    | Янги исм кошиш
-                            li 
-                                a(href="#") 
-                                    img(src="./img/mail.svg" alt="mail")
-                                    | Сайт бойича фикрингиз
-                            li 
-                                a(href="#") 
-                                    img(src="./img/net.svg" alt="net")
-                                    | Лотинча
+                        a(href="#").header__menu-link
+                            img(src="./img/net.svg" alt="net")
+                            span Лотинча
 
         .filter
