@@ -32,7 +32,7 @@ mixin header()
             .header__menu 
                 ul 
                     li.header__menu-item  
-                        a(href="#").header__menu-link
+                        a(href="./most.html").header__menu-link
                             img(src="./img/star.svg" alt="top")
                             span Топ 100
                     li.header__menu-item 
@@ -40,16 +40,19 @@ mixin header()
                             img(src="./img/search.svg" alt="search")
                             span Кидириш
                     li.header__menu-item 
-                        a(href="#").header__menu-link
+                        a(href="./interest.html").header__menu-link
                             img(src="./img/like.svg" alt="like")
                             span Бу кизик
                     li.header__menu-item 
                         a(href="#").header__menu-link 
                             img(src="./img/heart.svg" alt="heart")
                             span Севимлилар
-                    li.header__menu-item 
-                        a(href="#").header__menu-link
+                    li.header__menu-item
+                        .header__menu-link#langBtn
                             img(src="./img/net.svg" alt="net")
                             span Лотинча
+                        ul.lang  
+                            li.lang__item Лотинча
+                            li.lang__item Русча
 
         .filter

@@ -27,4 +27,18 @@ export function likeFn() {
         })
     }
 
+
+    const nolikedMost = document.querySelectorAll('.most .noliked');
+    const likedMost = document.querySelectorAll('.most .liked');
+
+    for (let i = 0; i < nolikedMost.length; i++) {
+        nolikedMost[i]?.addEventListener('click', function () {
+            nolikedMost[i].classList.remove('active')
+            likedMost[i].classList.add('active')
+        })
+        likedMost[i]?.addEventListener('click', function () {
+            likedMost[i].classList.remove('active')
+            nolikedMost[i].classList.add('active')
+        })
+    }
 }

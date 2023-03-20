@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="names">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css?_v=20230319171012">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230319171012">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css?_v=20230320133119">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230320133119">
     <title>Main page</title>
   </head>
   <body> 
@@ -36,11 +36,17 @@
           </div>
           <div class="header__menu"> 
             <ul> 
-              <li class="header__menu-item"> <a class="header__menu-link" href="#"><img src="./img/star.svg" alt="top"/><span>Топ 100</span></a></li>
+              <li class="header__menu-item"> <a class="header__menu-link" href="./most.html"><img src="./img/star.svg" alt="top"/><span>Топ 100</span></a></li>
               <li class="header__menu-item"> <a class="header__menu-link" href="#"><img src="./img/search.svg" alt="search"/><span>Кидириш</span></a></li>
-              <li class="header__menu-item"> <a class="header__menu-link" href="#"><img src="./img/like.svg" alt="like"/><span>Бу кизик</span></a></li>
+              <li class="header__menu-item"> <a class="header__menu-link" href="./interest.html"><img src="./img/like.svg" alt="like"/><span>Бу кизик</span></a></li>
               <li class="header__menu-item"> <a class="header__menu-link" href="#"> <img src="./img/heart.svg" alt="heart"/><span>Севимлилар</span></a></li>
-              <li class="header__menu-item"> <a class="header__menu-link" href="#"><img src="./img/net.svg" alt="net"/><span>Лотинча</span></a></li>
+              <li class="header__menu-item">
+                <div class="header__menu-link" id="langBtn"><img src="./img/net.svg" alt="net"/><span>Лотинча</span></div>
+                <ul class="lang"> 
+                  <li class="lang__item">Лотинча</li>
+                  <li class="lang__item">Русча</li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -172,7 +178,7 @@
                   <li> <a href="./detail.html">Мадина</a></li>
                   <li> <a href="./detail.html">Мадина</a></li>
                 </ul>
-              </div><a class="main__top-btn" href="#">Энг кўп қидирилган исмлар</a>
+              </div><a class="main__top-btn" href="./most.html">Энг кўп қидирилган исмлар</a>
             </div>
           </div>
           <div class="main__top"> 
@@ -193,12 +199,12 @@
                   <li> <a href="./detail.html">Мадина</a></li>
                   <li> <a href="./detail.html">Мадина</a></li>
                 </ul>
-              </div><a class="main__top-btn" href="#">Барча топ исмлар</a>
+              </div><a class="main__top-btn" href="./most.html">Барча топ исмлар</a>
             </div>
           </div>
-          <div class="main__interesting"> 
-            <div class="main__interesting-title">Кизикарли рукнлар</div>
-            <div class="main__interesting-box"> 
+          <div class="interesting"> 
+            <div class="interesting-title">Кизикарли рукнлар</div>
+            <div class="interesting-box"> 
               <ul> 
                 <li> <a href="./category.html">2021 йилда энг коп койилган исмлар    <img src="./img/right.svg" alt="right"/></a></li>
                 <li> <a href="./category.html">Арабча исмлар   <img src="./img/right.svg" alt="right"/></a></li>
@@ -218,6 +224,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/app.min.js?_v=20230319171012"> </script>
+    <script src="js/app.min.js?_v=20230320133119"> </script>
   </body>
 </html>

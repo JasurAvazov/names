@@ -1,0 +1,89 @@
+.most {
+    margin-top: 16px;
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 400;
+        color: #6b7280;
+    }
+    &__box {
+        margin-top: 16px;
+        border-radius: 16px;
+        padding: 16px;
+        &.boy {
+            background: #cffafe;
+            .most__list-link {
+                color: #06b6d4;
+            }
+        }
+        &.girl {
+            background: #fce7f3;
+            .most__list-link {
+                color: #ec4899;
+            }
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 8px;
+            line-height: 24px;
+        }
+        &-btn {
+            display: block;
+            color: black;
+            margin-top: 8px;
+            border-radius: 16px;
+            padding: 8px 16px;
+            font-size: 16px;
+            width: 100%;
+            background: white;
+            text-align: center;
+            line-height: 24px;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        &-num {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #9ca3af;
+            width: 28px;
+        }
+        &-link {
+            font-size: 16px;
+            padding: 8px 0px;
+            line-height: 24px;
+            width: calc(100% - 28px - 36px);
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            .like {
+                padding: 8px;
+                &__img {
+                    display: none;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        object-fit: contain;
+                    }
+                    &.active {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}

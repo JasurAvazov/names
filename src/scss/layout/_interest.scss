@@ -1,0 +1,29 @@
+.interest {
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        &-item {
+            background: #f3f4f6;
+            border-radius: 16px;
+            width: 100%;
+            a {
+                display: block;
+                width: 100%;
+                padding: 16px;
+                line-height: 24px;
+                img {
+                    vertical-align: middle;
+                    height: 18px;
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+}
